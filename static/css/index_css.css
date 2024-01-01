@@ -30,9 +30,14 @@ header{
   }
 
   .login_box input{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
+  .login_box button{
+    height: 30px;
+    width: 80px;
+  }
+
 
 header img{
     margin-top: 10%;
