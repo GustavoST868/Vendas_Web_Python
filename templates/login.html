@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importing javascript-->
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+    <!--importing css-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <!--importing icon-->
+    <link rel="icon" href="{{ url_for('static', filename='icons/login.png') }}" type="image/png">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="login_box">
+        <form action="processar_login.php" method="post">
+            <div class="input-group">
+                <label for="username">Nome de usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+    
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+    
+            <button type="submit">Entrar</button>
+    
+            <div class="register-link">
+                <p> <a href="#">Cadastrar</a></p>
+            </div>
+    
+            <div class="forgot-password">
+                <p><a href="#">Esqueci a senha</a></p>
+            </div>
+        </form>
+    </div>
+    
+    </body>
+</html>
