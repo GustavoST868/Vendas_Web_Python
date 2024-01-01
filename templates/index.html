@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--importing files-->
-    <script src="{{ url_for('static', filename='index_js.js') }}"></script>
+    <!--importing javascript-->
+    <script src="{{ url_for('static', filename='js/index_js.js') }}"></script>
+    <!--importing css-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index_css.css') }}">
+    <!--importing icon-->
     <link rel="icon" href="{{ url_for('static', filename='icons/box.png') }}" type="image/png">
     <title>VirtualStore</title>
 </head>
 <body>
     
+    <header>
+        <div class="icon_user">
+            <img src="{{ url_for('static', filename='icons/user_icon.png') }}" alt="">
+        </div>
+        
+        <!-- login box -->
+        <div class="login_box">
+            
+            <form>
+                <input type="text" id="username" name="username" placeholder="Usuário" required>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+      </header>
 </body>
 </html>
