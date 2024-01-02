@@ -1,6 +1,6 @@
 #libraries and modules
 from flask import Flask, render_template, request, redirect, url_for
-import classes.user_database
+import databases.user_database
 
 #start
 app = Flask(__name__)
