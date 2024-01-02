@@ -14,6 +14,11 @@ def index():
 def login():
     return render_template('login.html') 
 
+#route to register page
+@app.route('/register')
+def cadastro():
+    return render_template('register.html')
+
 #runs and starts the flask server
 if __name__ == '__main__':
     app.run(debug=True)
