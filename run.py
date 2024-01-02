@@ -1,37 +1,57 @@
-#libraries and modules
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, flash
 import databases.user_database
+from tkinter import messagebox
 
-#start
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Replace with a secure secret key
 
-#initial route
+# Initial route
 @app.route('/')
 def index():
     return render_template('index.html')
 
-#route to login page
-@app.route('/login')
+# Route to login page
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html') 
-
-#route to register page
-@app.route('/register', methods=['GET', 'POST'])
-def cadastro():
+    message = ''
     if request.method == 'POST':
-        # form submission
+        # Form submission
+        username = request.form.get('username')
+        password = request.form.get('password')
+
+        database_user = databases.user_database.UserDatabase()
+        user = database_user.authenticate_user('database_user',username, password)
+        
+        if user:
+            return render_template('product.html')
+            
+        else:
+            error_message = 'Usuário não autenticado!'
+            message = error_message
+
+    return render_template('login.html', error_message = message)
+
+# Route to register page
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        # Form submission
         username = request.form.get('username')
         password = request.form.get('password')
         email = request.form.get('email')
 
-        #by getting the data show
+        # Display form data
         print(f"\n\nUsername: {username}, Password: {password}, Email: {email}\n\n")
+        
+        database_user = databases.user_database.UserDatabase()
+        database_user.insert_user('database_user',username, password, email)
 
         # Redirect to the index page after submission
+        flash('Registration successful', 'success')
         return redirect(url_for('index'))
 
     return render_template('register.html')
 
-#runs and starts the flask server
+# Runs and starts the Flask server
 if __name__ == '__main__':
     app.run(debug=True)
