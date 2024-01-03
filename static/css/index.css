@@ -44,18 +44,20 @@ body{
 }
 
 .first_block{
-    border: 2px solid white;
+    border: none;
     border-radius: 30px;
-    margin-top: 10%;
-    margin-left: 10%;
-    background-color: rgb(2, 61, 88);
-    height: 75%;
-    width: 30%;
+    margin-top: 5%;
+    
+    background-color: rgb(2, 91, 133);
+    height: 88%;
+    width: 50%;
 }
 
 .first_block p{
+    align-items: center;
+    text-align: center;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 25%;
     margin-right: 10%;
     color: white;
     font-size: 25px;
@@ -63,29 +65,31 @@ body{
 
 
 .second_block{
-    border: 2px solid white;
+    border:none;
     border-radius: 30px;
     
-    background-color: rgb(2, 61, 88);
-    margin-left: 20%;
-    margin-top: 10%;
-    height: 75%;
-    width: 30%;
+    background-color: rgb(2, 91, 133);
+    
+    margin-top: 5%;
+    height: 88%;
+    width: 50%;
     
     
 }
 
 
 .second_block p{
-    margin-left: 10%;
-    margin-top: 10%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 20%;
     margin-right: 10%;
     color: white;
     font-size: 25px;
 }
 
 .second_block img{
-    margin-top: -18.5%;
+    margin-top: -14%;
+    
     height: 90%;
     width: 115%;
     margin-left: 6%;
