@@ -209,7 +209,12 @@ body{
 }
 
 .social {
-    margin-left: 35%;
+    margin-left: 30%;
+}
+
+.social img{
+    height: 40px;
+    width: 40px;
 }
 
 
