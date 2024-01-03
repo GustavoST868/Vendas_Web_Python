@@ -23,7 +23,7 @@ header img{
 
 img:hover{
     border-radius: 30px;
-    border: 2px solid rgb(2, 91, 133);
+    border: 2px solid rgb(238, 242, 243);
 }
 
 
@@ -31,3 +31,13 @@ html{
     position: fixed;
     background-color: rgb(2, 91, 133);
 }
+
+h1{
+    margin-left: 35%;
+    color: aliceblue;
+}
+
+body{
+    position: fixed;
+}
+

@@ -48,7 +48,7 @@ def register():
 
         # Redirect to the index page after submission
         flash('Registration successful', 'success')
-        return redirect(url_for('index'))
+        return render_template('product.html')
 
     return render_template('register.html')
 
