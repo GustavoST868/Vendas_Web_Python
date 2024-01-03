@@ -208,6 +208,10 @@ body{
     animation-duration: 11s;
 }
 
+.social {
+    margin-left: 35%;
+}
+
 
 
 @keyframes animate {
