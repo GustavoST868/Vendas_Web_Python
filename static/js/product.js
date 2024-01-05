@@ -1,3 +1,5 @@
+//contains objects that describe the products
+//each component of the products
 const products = [
   { name: "Produto 1", image: "static/img/caixa.png" },
   { name: "Produto 2", image: "static/img/caixa.png" },
@@ -10,14 +12,19 @@ const products = [
   { name: "Produto 9", image: "static/img/caixa.png" },
 ];
 
+//creates the structure of the product element
 function createProductElement(product) {
+
+  //creates the div element for each product
   const productItem = document.createElement("div");
   productItem.classList.add("product-item");
 
+  //creates the img element for each product
   const productImage = document.createElement("img");
   productImage.src = product.image;
   productImage.alt = product.name;
 
+  //creates the span/name element for each product
   const productName = document.createElement("span");
   productName.textContent = product.name;
 
@@ -27,6 +34,7 @@ function createProductElement(product) {
   return productItem;
 }
 
+//create an html element for each product
 function displayProducts() {
   const productList = document.getElementById("productList");
   productList.innerHTML = "";
@@ -37,7 +45,9 @@ function displayProducts() {
   });
 }
 
+//filters the product whose name is entered
 function filterProducts() {
+
   const searchInput = document.getElementById("searchInput");
   const filter = searchInput.value.toLowerCase();
   const filteredProducts = products.filter(product => product.name.toLowerCase().includes(filter));
@@ -51,6 +61,7 @@ function filterProducts() {
   });
 }
 
+//displays all products
 window.onload = function () {
   displayProducts();
 };
