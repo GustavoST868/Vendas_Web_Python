@@ -3,7 +3,7 @@ function validateForm() {
     const password = document.getElementById("password").value;
     const email = document.getElementById("email").value;
 
-    // simple validation logic
+    // simple validation logic,if the fields are empty
     if (username === "") {
         document.getElementById("usernameError").textContent = "Campo obrigatório";
         return;
