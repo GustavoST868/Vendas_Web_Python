@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(185, 232, 253);
+    background-color: rgb(223, 221, 221);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,12 +9,14 @@ body {
 }
 
 .login_box {
-    background-color: rgb(139, 204, 235);
-    border: 5px solid rgb(26, 136, 187);
+    background-color: rgb(211, 211, 211);
+    border: 2px solid rgb(0, 0, 0);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    height: 45%;
+    width: 20%;
+    animation: animation 0.5s;
 }
 
 .login_box label {
@@ -32,27 +34,57 @@ body {
 .input-group input {
     width: 100%;
     box-sizing: border-box;
+    animation: animation_input 0.5s;
 }
 
 .login_box input {
-    background-color: rgb(185, 227, 247);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(175, 180, 185);
     padding: 8px;
 }
 
 .login_box button {
-    background-color: rgb(2, 91, 133);
+    background-color: rgb(135, 137, 138);
     color: #fff;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
+    margin-top: 5%;
     cursor: pointer;
     width: 100%;
 }
 
 .login_box button:hover {
-    background-color:rgb(2, 74, 107);
+    background-color: rgb(106, 108, 109);
 }
 
 a{
+    color: black;
     text-decoration: none;
+}
+
+@keyframes animation{
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+
+    100%{
+        width: 20%;
+        height: 45%;
+    }
+}
+
+@keyframes animation_input{
+    0%{
+        width: 0%;
+        
+    }
+
+    100%{
+        width: 100%;
+        
+    }
 }
