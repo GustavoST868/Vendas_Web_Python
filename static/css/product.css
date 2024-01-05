@@ -1,116 +1,52 @@
-html {
-    display: block;
-    margin: 0;
+* {
     padding: 0;
     inset: 0;
-    background-color: rgb(2, 91, 133);
+}
+
+html {
+    background-color: rgb(185, 232, 253);
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
-header {
-    top: 0;
-    left: 0;
-    position: fixed;
-    height: 5%;
+header input {
+    background-color: rgb(127, 201, 235);
     width: 100%;
-    background-color: rgb(2, 61, 88);
+    height: 30px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+
+.product-item {
+    margin-top: 5%;
+    margin-left: 5%;
+    border: 3px solid #186ae4;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 100; /* Añadir z-index para asegurar que el encabezado esté encima de otros elementos */
-}
-
-.inside {
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-    top: 0;
-    margin-left: 1%;
-    margin-right: 3%;
-    height: 90%;
-    background-color: rgb(179, 212, 228);
-}
-
-.inside input {
-    border: none;
-    background-color: rgb(179, 212, 228);
-    margin-left: 0.6%;
-    height: 20px;
-    width: 98%;
-    outline: none;
-}
-
-.inside img {
-    margin-left: 1%;
-    margin-right: 1%;
-    height: 20px;
-    width: 20px;
-}
-
-.inside img:hover {
-    border: 2px solid white;
-    border-radius: 30px;
-}
-
-.box1 {
-    background-color: rgb(138, 209, 241);
-    margin-top: 10%;
-    margin-left: 9%;
-    border-radius: 30px;
+    cursor: pointer;
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
     height: 400px;
-    width: 300px
+    margin-bottom: 20px; 
 }
 
-.box2 {
-    background-color: rgb(138, 209, 241);
-    margin-top: 10%;
-    margin-left: 9%;
-    border-radius: 30px;
-    height: 400px;
-    width: 300px
+.product-item img {
+    height: 70%; 
+    width: 100%;
 }
 
-.box3 {
-    background-color: rgb(138, 209, 241);
-    margin-top: 10%;
-    margin-left: 9%;
-    border-radius: 30px;
-    height: 400px;
-    width: 300px
+.product-item:hover {
+    background-color: #6293dd;
 }
 
-.box3:hover{
-    background-color: rgb(235, 245, 250);
-}
 
-.box2:hover{
-    background-color: rgb(235, 245, 250);
+.product-item:hover img {
+    filter: brightness(90%);
 }
-
-.box1:hover{
-    background-color: rgb(235, 245, 250);
-}
-
-.group{
-    display: flex;
-}
-
-.group1 img{
-    height: 60px;
-    width: 60;
-}
-
-.group1 img:hover{
-    border-radius: 50%;
-    border: 2px solid white;
-}
-
-.group1{
-    margin-top: 3%;
-    margin-left: 8%;
-    display: flex;
-}
-
