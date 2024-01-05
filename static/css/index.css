@@ -16,7 +16,7 @@ header{
 }
 
 header img{
-    margin-top: 10%;
+    margin-top: 7%;
     height: 35px;
     height: 35px;
 }
@@ -51,6 +51,7 @@ body{
     background-color: rgb(185, 232, 253);
     height: 88%;
     width: 50%;
+    
 }
 
 .first_block p{
@@ -233,3 +234,5 @@ body{
     }
 
 }
+
+
