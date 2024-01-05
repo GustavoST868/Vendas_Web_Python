@@ -61,7 +61,10 @@ function filterProducts() {
   });
 }
 
+
 //displays all products
 window.onload = function () {
   displayProducts();
 };
+
+
