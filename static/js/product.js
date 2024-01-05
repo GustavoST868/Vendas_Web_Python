@@ -1,15 +1,15 @@
 //contains objects that describe the products
 //each component of the products
 const products = [
-  { name: "Produto 1", image: "static/img/caixa.png" },
-  { name: "Produto 2", image: "static/img/caixa.png" },
-  { name: "Produto 3", image: "static/img/caixa.png" },
-  { name: "Produto 4", image: "static/img/caixa.png" },
-  { name: "Produto 5", image: "static/img/caixa.png" },
-  { name: "Produto 6", image: "static/img/caixa.png" },
-  { name: "Produto 7", image: "static/img/caixa.png" },
-  { name: "Produto 8", image: "static/img/caixa.png" },
-  { name: "Produto 9", image: "static/img/caixa.png" },
+  { name: "Produto 1", image: "static/img/box.png" },
+  { name: "Produto 2", image: "static/img/box.png" },
+  { name: "Produto 3", image: "static/img/box.png" },
+  { name: "Produto 4", image: "static/img/box.png" },
+  { name: "Produto 5", image: "static/img/box.png" },
+  { name: "Produto 6", image: "static/img/box.png" },
+  { name: "Produto 7", image: "static/img/box.png" },
+  { name: "Produto 8", image: "static/img/box.png" },
+  { name: "Produto 9", image: "static/img/box.png" },
 ];
 
 //creates the structure of the product element
