@@ -54,7 +54,7 @@ header input {
     box-sizing: border-box;
     height: 300px;
     margin-bottom: 20px; 
-    animation: animation-box 3.5s;
+    animation: animation-box 1s;
 }
 
 .product-item img {

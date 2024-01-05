@@ -209,13 +209,33 @@ body{
 }
 
 .social {
+    display: flex;
     margin-left: 30%;
 }
 
 .social img{
-    height: 40px;
-    width: 40px;
+    margin-left: 20%;
+    border-radius: 0%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    
 }
+.one,
+.two,
+.three {
+    margin-left: 20%;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.one:hover,
+.two:hover,
+.three:hover {
+    transform: scale(1.1);
+}
+
+
 
 
 
