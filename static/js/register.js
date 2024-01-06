@@ -10,14 +10,14 @@ function validateForm() {
     } else {
         document.getElementById("usernameError").textContent = "";
     }
-
+    //if the password field is empty
     if (password === "") {
         document.getElementById("passwordError").textContent = "Campo obrigatório";
         return;
     } else {
         document.getElementById("passwordError").textContent = "";
     }
-
+    //if the email field is empty
     if (email === "") {
         document.getElementById("emailError").textContent = "Campo obrigatório";
         return;
